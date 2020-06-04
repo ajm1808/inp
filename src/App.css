@@ -5,6 +5,7 @@
   align-items: center;
   height:100vh;
   background-image:linear-gradient(rgba(49, 91, 175, 0.514), rgba(61, 142, 209, 0.774)) ;
+  flex-direction: column;
 }
 
 .trumpPic{

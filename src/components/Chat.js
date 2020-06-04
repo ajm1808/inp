@@ -3,6 +3,9 @@ import { ThemeProvider } from 'styled-components';
 import ChatBot from 'react-simple-chatbot';
 import Trumpyes from '../img/trumpyes.jpg';
 import Trumpno from '../img/trumpno.PNG';
+import styled from 'styled-components';
+
+
 
 // all available props
 const theme = {
@@ -16,6 +19,9 @@ const theme = {
   userBubbleColor: '#fff',
   userFontColor: '#4a4a4a',
 };
+
+
+
 
 const steps = [
   {
@@ -201,10 +207,10 @@ const steps = [
 
 ];
 
-const Chat = () => (
+const TrumpBot = () => (
   <ThemeProvider theme={theme}>
     <ChatBot steps={steps} />;
   </ThemeProvider>
 );
 
-export default Chat;
+export default TrumpBot;
