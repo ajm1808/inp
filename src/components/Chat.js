@@ -3,6 +3,11 @@ import { ThemeProvider } from 'styled-components';
 import ChatBot from 'react-simple-chatbot';
 import Trumpyes from '../img/trumpyes.jpg';
 import Trumpno from '../img/trumpno.PNG';
+import styled from 'styled-components';
+import boris1 from '../img/boris.png';
+import boris2 from '../img/boris2.jpg';
+
+
 
 // all available props
 const theme = {
@@ -15,7 +20,12 @@ const theme = {
   botFontColor: '#fff',
   userBubbleColor: '#fff',
   userFontColor: '#4a4a4a',
+  botDelay: 1000,
 };
+
+
+
+
 
 const steps = [
   {
@@ -63,7 +73,7 @@ const steps = [
   },
   {
     id:'7',
-    message:"I'll turn my life into a masterpiece",
+    message:'"I will turn my life into a masterpiece"',
     trigger:8,
   },
   {
@@ -97,7 +107,7 @@ const steps = [
   },
   {
     id:'12',
-    message:"The world belongs to the man with guts!",
+    message:'"The world belongs to the man with guts!"',
     trigger:13,
   },
   {
@@ -131,7 +141,7 @@ const steps = [
   },
   {
     id:'17',
-    message:"Success is the sole earthly judge of right and wrong",
+    message:'"Success is the sole earthly judge of right and wrong"',
     trigger:18,
   },
   {
@@ -152,7 +162,7 @@ const steps = [
     id:'20',
     component:(
       <div className="trumpPic">
-        // <p>Not this guy!</p>
+        <p>Not this guy!</p>
         <img id="trumpImg" src={Trumpno}/>
       </div>
     ),
@@ -165,7 +175,7 @@ const steps = [
   },
   {
     id:'22',
-    message:"Good people don't go into government",
+    message:'"Good people do not go into government"',
     trigger:23,
   },
   {
@@ -194,6 +204,102 @@ const steps = [
   },
   {
     id:'26',
+    message:'"My policy on cake is pro having it and pro eating it."',
+    trigger:27,
+  },
+  {
+    id:'27',
+    options:[
+      {value:1,label:'Trump',trigger:'28'},
+      {value:2,label:'Boris',trigger:'29'},
+    ]
+  },
+  {
+    id:'28',
+    component:(
+      <div className="trumpPic">
+        <p>Not this hairy leader!</p>
+        <img id="trumpImg" src={Trumpno}/>
+      </div>
+    ),
+    trigger:27,
+  },
+  {
+    id:'29',
+    component:(
+      <div className="trumpPic">
+        <p>Correct!</p>
+        <img id="trumpImg" src={boris1}/>
+      </div>
+    ),
+    trigger:30,
+  },
+  {
+    id:'30',
+    message:'"Exams work because they are scary"',
+    trigger:31,
+  },
+  {
+    id:'31',
+    options:[
+      {value:1,label:'Trump',trigger:'33'},
+      {value:2,label:'Boris',trigger:'32'},
+    ]
+  },
+  {
+    id:'32',
+    component:(
+      <div className="trumpPic">
+        <p>Correct!</p>
+        <img id="trumpImg" src={boris1}/>
+      </div>
+    ),
+    trigger:34,
+  },
+  {
+    id:'33',
+    component:(
+      <div className="trumpPic">
+        <p>Not this guy!</p>
+        <img id="trumpImg" src={Trumpno}/>
+      </div>
+    ),
+    trigger:31,
+  },
+  {
+    id:'34',
+    message:'"I think if this country gets any kinder or gentler, it is literally going to cease to exist."',
+    trigger:35
+  },
+  {
+    id:'35',
+    options:[
+      {value:1,label:'Trump',trigger:'37'},
+      {value:2,label:'Boris',trigger:'36'},
+    ]
+  },
+  {
+    id:'36',
+    component:(
+      <div className="trumpPic">
+        <p>Not this guy!</p>
+        <img id="trumpImg" src={boris2}/>
+      </div>
+    ),
+    trigger:35,
+  },
+  {
+    id:'37',
+    component:(
+      <div className="trumpPic">
+        <p>Sadly, this is correct</p>
+        <img id="trumpImg" src={Trumpyes}/>
+      </div>
+    ),
+    trigger:38,
+  },
+  {
+    id:'38',
     message:"Thanks for playing - remember, democracy dies in darkness",
     end:true,
   }
@@ -201,10 +307,10 @@ const steps = [
 
 ];
 
-const Chat = () => (
+const TrumpBot = () => (
   <ThemeProvider theme={theme}>
     <ChatBot steps={steps} />;
   </ThemeProvider>
 );
 
-export default Chat;
+export default TrumpBot;
