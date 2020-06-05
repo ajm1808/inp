@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/inp/static/css/main.4bcc23c8.chunk.css",
+    "main.js": "/inp/static/js/main.c271321a.chunk.js",
+    "main.js.map": "/inp/static/js/main.c271321a.chunk.js.map",
+    "runtime-main.js": "/inp/static/js/runtime-main.e6c69c41.js",
+    "runtime-main.js.map": "/inp/static/js/runtime-main.e6c69c41.js.map",
+    "static/js/2.2d1f8cdf.chunk.js": "/inp/static/js/2.2d1f8cdf.chunk.js",
+    "static/js/2.2d1f8cdf.chunk.js.map": "/inp/static/js/2.2d1f8cdf.chunk.js.map",
+    "index.html": "/inp/index.html",
+    "precache-manifest.b44163ec1487deff80b647a273016dc5.js": "/inp/precache-manifest.b44163ec1487deff80b647a273016dc5.js",
+    "service-worker.js": "/inp/service-worker.js",
+    "static/css/main.4bcc23c8.chunk.css.map": "/inp/static/css/main.4bcc23c8.chunk.css.map",
+    "static/js/2.2d1f8cdf.chunk.js.LICENSE.txt": "/inp/static/js/2.2d1f8cdf.chunk.js.LICENSE.txt",
+    "static/media/boris.png": "/inp/static/media/boris.4917d7e8.png",
+    "static/media/boris2.jpg": "/inp/static/media/boris2.659c7dd0.jpg",
+    "static/media/trumpno.PNG": "/inp/static/media/trumpno.fb0f4b4c.PNG",
+    "static/media/trumpyes.jpg": "/inp/static/media/trumpyes.a59659c6.jpg",
+    "static/media/trumpyes.png": "/inp/static/media/trumpyes.e1201277.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e6c69c41.js",
+    "static/js/2.2d1f8cdf.chunk.js",
+    "static/css/main.4bcc23c8.chunk.css",
+    "static/js/main.c271321a.chunk.js"
+  ]
+}
