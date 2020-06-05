@@ -1,11 +1,13 @@
+
 .App {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   height:100vh;
-  background-image:linear-gradient(rgba(49, 91, 175, 0.514), rgba(61, 142, 209, 0.774)) ;
+  background-image:url(https://i.pinimg.com/originals/26/2f/21/262f21a40e2390fcba3d874f967e99d6.jpg);
   flex-direction: column;
+  position: relative;
 }
 
 .trumpPic{
@@ -18,3 +20,10 @@
   width:80px;
   border-radius: 50%;
 }
+
+h1{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 400;
+ 
+}
+

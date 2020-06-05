@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const StyledWrapper=styled.div`
     background: ${props=>props.themeColor};
 
+
 `
 
 const Header = () => (
